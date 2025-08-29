@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.431" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaInicialController">
+   <children>
+      <ImageView fitHeight="433.0" fitWidth="730.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botaoIniciar" fitHeight="121.0" fitWidth="150.0" layoutX="305.0" layoutY="235.0" onMouseClicked="#iniciarDescricao" onMouseEntered="#hoverBotaoIniciar" onMouseExited="#exitBotaoIniciar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Iniciar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.431" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaDescricaoController">
+   <children>
+      <ImageView fitHeight="433.0" fitWidth="730.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Descricao.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="356.0" fitWidth="356.0" layoutX="360.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+         <image>
+            <Image url="@../assets/BobCorrendo1.png" />
+         </image>
+         <rotationAxis>
+            <Point3D y="5.0" z="1.0" />
+         </rotationAxis></ImageView>
+      <ImageView fx:id="botaoVoltar" fitHeight="93.0" fitWidth="70.0" layoutX="25.0" layoutY="14.0" onMouseClicked="#voltarTelaInicial" onMouseEntered="#hoverBotaoVoltar" onMouseExited="#exitBotaoVoltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Voltar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="botaoIniciar" fitHeight="128.0" fitWidth="203.0" layoutX="581.0" layoutY="298.0" onMouseClicked="#iniciarCaorrida" onMouseEntered="#hoverBotaoIniciar" onMouseExited="#exitBotaoIniciar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Iniciar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
