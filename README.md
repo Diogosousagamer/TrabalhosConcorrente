@@ -1,7 +1,3 @@
-# Glossário - Programação Concorrente
-
-Programação Concorrente é um paradigma de desenvolvimento que visa trabalhar fenômenos relacionados à concorrência entre dois processos computacionais. 
-
 # Sobre os Trabalhos
 
 Esses trabalhos foram elaborados como parte da avaliação parcial da disciplina Programação Concorrente, ministrada pelo professor Marlos Marques durante o III Semestre 2025.1 do curso Bacharelado de Ciência da Computação da Universidade Estadual do Sudoeste da Bahia (UESB). Cada um destes trabalhos visa abordar (e solucionar) problemas relacionados à concorrência entre processos, bem como reforçar conceitos apresentados durante as aulas, como semáforos, solução de Peterson, Barbeiro Dorminhoco, exclusão mútua, entre outros. 
@@ -29,3 +25,7 @@ Este trabalho serve como uma implementação do problema do Barbeiro Dorminhoco,
 Para o último trabalho da disciplina, foi proposta a elaboração de um sistema de trânsito autômato capaz de gerenciar a movimentação de oito carros sobre uma trilha composta por quadras sem que eles colidam. Ao contrário dos demais trabalhos, que foram baseados em soluções já existentes, o objetivo deste trabalho era propor uma solução única para o problema usando semáforos, e a quantidade varia de acordo com a combinação de percursos e sentidos (Horário ou Anti-Horário) sorteada para cada aluno. 
 
 "Cãorrida Universitária" se baseou fortemente nos cachorros que convivem com a comunidade acadêmica da Universidade Estadual do Sudoeste da Bahia (UESB), sendo as estrelas do programa: Bob, Lady, Desconfiado, Chocolate, Guará, Bento, Dorinha e Gulosa (seguindo a ordem apresentada na seção de Controles na tela principal do programa). O usuário é capaz de pausar/retomar individualmente a movimentação de cada cão, bem como alterar suas respectivas velocidades, reiniciar a simulação e visualizar os seus percursos na trilha. 
+
+# Glossário - Programação Concorrente
+
+Programação Concorrente é um paradigma de desenvolvimento que visa trabalhar fenômenos relacionados à concorrência entre dois processos computacionais. 
