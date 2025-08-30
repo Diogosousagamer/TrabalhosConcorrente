@@ -28,4 +28,32 @@ Para o último trabalho da disciplina, foi proposta a elaboração de um sistema
 
 # Glossário - Programação Concorrente
 
-Programação Concorrente é um paradigma de desenvolvimento que visa trabalhar fenômenos relacionados à concorrência entre dois processos computacionais. 
+Programação Concorrente é um paradigma de desenvolvimento que visa trabalhar fenômenos relacionados à concorrência entre dois processos computacionais. Aqui são apresentados alguns conceitos considerados essenciais para o entendimento dos trabalhos:
+
+* **Processo:** instância de um programa em execução.
+* **Threads:** fio de execução de um processo, permitindo a execução de operações que possam sobrecarregar e travar o processo.
+* **Pseudoparalelismo:** simulação do paralelismo em sistemas com uma única CPU, onde ela separa tempo para acessar cada processo de modo a criar a ilusão de que os processos estão sendo executados em paralelo.
+* **Time sharing:** abordagem técnica que enfatiza o compartilhamento de tempo entre processos, garantindo que todos eles sejam acessados pela CPU.
+* **Time slicing:** operação que divide o tempo de execução disponibilizado pela CPU em pequenos intervalos, sendo essencial na manutenção do time sharing.
+* **Troca de contexto:** operação que gerencia a alternância dos estados de execução dos processos, tendo de salvar o estado de um processo caso seja interrompido para depois recuperá-lo no momento que sua execução for retomada.
+* **Condições de corrida:** condições onde dois ou mais processos se "atropelam" ao tentarem acessar algum recurso compartilhado, podendo gerar erros de execução.
+* **Exclusão mútua:** condição que garante que, quando um processo está acessando um recurso compartilhado, os demais são obrigados a esperar.
+* **Região crítica:** região onde dois os mais processos acessam o mesmo recurso compartilhado, tornando-se propensa a condições de corrida.
+* **Espera ocupada:** teste contínuo de um processo, que é posto para aguardar um certo tempo enquanto alguma condição não for atendida para que ele possa prosseguir com sua operação. No entanto, essa abordagem é restrita apenas para processos cujo tempo de espera é curto, pois desperdiça tempo de processamento da CPU.
+* **Espera desnecessária:** um processo é obrigado a aguardar desnecessariamente o encerramento da execução de outro processo mesmo que este não esteja em um ponto crítico.
+* **Variável de travamento:** solução com espera ocupada que utiliza de uma variável para gerenciar o acesso de um processo à região crítica.
+* **Estrita alternância:** solução com espera ocupada onde uma variável "turn" alterna seu valor entre 0 e 1 para determinar qual processo acessará a região crítica.
+* **Solução de Peterson:** solução com espera ocupada elaborada por G.L. Petersen que funciona como um refinamento da estrita alternância e de uma solução similar anteriormente apresentada por T. Dekker. Além da variável "turn", também é utilizado um vetor de interesse para evitar a espera desnecessária, conseguindo controlar de maneira eficaz o acesso à região crítica, especialmente quando os processos tentarem acessá-la ao mesmo tempo.
+* **Semáforos**: primitiva de baixo nível proposta por Edsger Dijkstra para contar a quantidade de sinais armazenados e gerenciar permissões no que tange a alocação de recursos compartilhados entre dois ou mais processos. Ela possui duas operações: UP (release() em Java; incrementa um sinal, liberando uma permissão a ser adquirida por outro processo) e DOWN (acquire() em Java; decrementa um sinal, onde um processo tenta adquirir uma permissão ou é bloqueado caso contrário), tratando-se de operações atômicas (uma vez iniciadas, não podem ser interrompidas) que garantem a exclusão mútua de maneira eficiente.
+* **Barbeiro Dorminhoco:** problema clássico de comunicação entre processos ambientado em uma barbearia capaz de ocupar até cinco clientes, cujo foco é gerenciar as operações de um barbeiro, que alterna entre realizar seu serviço e dormir de acordo com a presença de clientes.
+* **Deadlock**: condição em que um conjunto de processos está aguardando a liberação de um recurso entre eles, barrando o progresso de suas operações, congelando a execução do programa e prejudicando a confiabilidade da concorrência do sistema.
+* **Starvation:** condição em que um processo, embora permaneça ativo (ao contrário da Deadlock), fica preso em um estado de execução por tempo indefinido. 
+
+# Construído com
+* Bloco de Notas
+* Visual Studio Code
+* Java 1.8.431
+
+# Tecnologias Utilizadas
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white)
