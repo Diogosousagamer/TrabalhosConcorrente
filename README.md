@@ -8,11 +8,15 @@ Este trabalho introdutório consiste em desenvolver um sistema capaz de gerencia
 
 Entre os recursos adicionados estão: controle da velocidade de movimentação dos foguetes, caixas de seleção para alterar a posição e o sentido dos foguetes na trilha, e botões de play/pausa e reset para controlar o andamento da simulação. 
 
+![Trilha Espacial][trilha]
+
 ## Trabalho 2 - Trilha Espacial 2 🛰️
 
 Dando sequência ao trabalho anterior, embora muitos dos recursos do mesmo foram retomados, este trabalho teve como ênfase o gerenciamento de colisão dos trens (foguetes) via Threads e implementação de soluções pré-prontas com espera ocupada (Variável de Travamento, Estrita Alternância e Solução de Peterson). 
 
 "Trilha Espacial 2" retoma a influência estética do seu antecessor, em homenagem aos álbuns *Music of the Spheres* (2021) e *Moon Music* (2024) da banda de rock britânica Coldplay, porém adicionando novas funcionalidades: alternância de tema, que permite trocar a aparência do programa durante a simulação; seleção de cores de foguetes (Verde, Roxo, Azul-Esverdeado e Rosa-Alaranjado); descrição dos temas; tocador de música contendo uma playlist pré-definida (não foi incluído na versão entregue a Marlos devido a problemas de debug no Linux); e uma caixa de seleção dos algoritmos de exclusão mútua citados no último parágrafo. 
+
+![Trilha Espacial 2][trilha2]
 
 ## Trabalho 3 - Bob: Space Barber 🛸
 
@@ -25,6 +29,8 @@ Este trabalho serve como uma implementação do problema do Barbeiro Dorminhoco,
 Para o último trabalho da disciplina, foi proposta a elaboração de um sistema de trânsito autômato capaz de gerenciar a movimentação de oito carros sobre uma trilha composta por quadras sem que eles colidam. Ao contrário dos demais trabalhos, que foram baseados em soluções já existentes, o objetivo deste trabalho era propor uma solução única para o problema usando semáforos, e a quantidade varia de acordo com a combinação de percursos e sentidos (Horário ou Anti-Horário) sorteada para cada aluno. 
 
 "Cãorrida Universitária" se baseou fortemente nos cachorros que convivem com a comunidade acadêmica da Universidade Estadual do Sudoeste da Bahia (UESB), sendo as estrelas do programa: Bob, Lady, Desconfiado, Chocolate, Guará, Bento, Dorinha e Gulosa (seguindo a ordem apresentada na seção de Controles na tela principal do programa). O usuário é capaz de pausar/retomar individualmente a movimentação de cada cão, bem como alterar suas respectivas velocidades, reiniciar a simulação e visualizar os seus percursos na trilha. 
+
+![Cãorrida Universitária][caorrida]
 
 # Glossário - Programação Concorrente
 
@@ -57,3 +63,8 @@ Programação Concorrente é um paradigma de desenvolvimento que visa trabalhar 
 # Tecnologias Utilizadas
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white)
+
+<-- MARKDOWN IMAGES -->
+[trilha]: readme_images/trilha-preview.png
+[trilha2]: readme_images/trilha2-preview.png
+[caorrida]: readme_images/caorrida-preview.png
