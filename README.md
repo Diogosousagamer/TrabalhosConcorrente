@@ -30,11 +30,6 @@ Para o último trabalho da disciplina, foi proposta a elaboração de um sistema
 
 "Cãorrida Universitária" se baseou fortemente nos cachorros que convivem com a comunidade acadêmica da Universidade Estadual do Sudoeste da Bahia (UESB), sendo as estrelas do programa: Bob, Lady, Desconfiado, Chocolate, Guará, Bento, Dorinha e Gulosa (seguindo a ordem apresentada na seção de Controles na tela principal do programa). O usuário é capaz de pausar/retomar individualmente a movimentação de cada cão, bem como alterar suas respectivas velocidades, reiniciar a simulação e visualizar os seus percursos na trilha. 
 
-<p align="center">
-  <img src="readme_images/caorrida.png" width="400 /><br>
-  <em>Tela principal do programa</em>
-</p>
-
 ![CAORRIDA][caorrida]
 
 # Glossário - Programação Concorrente
