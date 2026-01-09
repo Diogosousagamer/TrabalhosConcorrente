@@ -1,0 +1,23 @@
+#botaoIniciar {
+  -fx-font-family: "Louize";
+}
+
+#labelPosicao {
+  -fx-font-family: "Louize";
+}
+
+#comboBoxPosicaoFogueteVerde {
+  -fx-background-color: rgb(12, 207, 31);
+  -fx-font-family: "Louize";
+  -fx-text-fill: #ffffff;
+}
+
+#comboBoxPosicaoFogueteRoxo {
+  -fx-background-color: rgb(165, 44, 205);
+  -fx-font-family: "Louize";
+  -fx-text-fill: #ffffff;
+}
+
+#botaoIniciar:hover {
+  -fx-background-color: #0eacf0;
+}

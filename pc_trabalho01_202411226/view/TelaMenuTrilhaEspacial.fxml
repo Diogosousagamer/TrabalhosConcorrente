@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="painelMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8.0.431" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaMenuTrilhaEspacialController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="697.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Menu.png" />
+         </image>
+      </ImageView>
+      <Label id="labelPosicao" fx:id="labelPosicao" layoutX="162.0" layoutY="250.0" prefHeight="33.0" prefWidth="358.0" text="INSIRA A POSIÇÃO INICIAL DOS FOGUETES" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Louize" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox id="comboBoxPosicaoFogueteVerde" fx:id="comboBoxPosicaoFogueteVerde" layoutX="116.0" layoutY="291.0" onAction="#alterarPosicaoVerde" prefHeight="33.0" prefWidth="219.0" promptText="FOGUETE VERDE" style="-fx-border-color: #ffffff; -fx-padding: 3; -fx-border-radius: 3; -fx-background-radius: 3;" stylesheets="@../css/menuTrilhaEspacial.css" />
+      <Button id="botaoIniciar" fx:id="botaoIniciar" ellipsisString="" layoutX="279.0" layoutY="338.0" mnemonicParsing="false" onAction="#iniciarTrilhaEspacial" onMouseEntered="#hoverBotaoIniciar" onMouseExited="#exitBotaoiniciar" prefHeight="39.0" prefWidth="130.0" stylesheets="@../css/menuTrilhaEspacial.css" text="INICIAR" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Louize" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox id="comboBoxPosicaoFogueteRoxo" fx:id="comboBoxPosicaoFogueteRoxo" layoutX="347.0" layoutY="291.0" onAction="#alterarPosicaoRoxo" prefHeight="33.0" prefWidth="219.0" promptText="FOGUETE ROXO" style="-fx-border-color: #ffffff; -fx-padding: 3; -fx-border-radius: 3; -fx-background-radius: 3;" stylesheets="@../css/menuTrilhaEspacial.css" />
+   </children>
+</AnchorPane>

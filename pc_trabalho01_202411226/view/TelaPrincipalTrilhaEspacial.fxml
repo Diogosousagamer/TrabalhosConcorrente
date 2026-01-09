@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8.0.431" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalTrilhaEspacialController">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="706.0" layoutX="-5.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Trilha%20(Fundo).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagemFogueteVerde" fitHeight="25.0" fitWidth="41.0" layoutX="-27.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Foguete%20Verde.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagemFogueteRoxo" fitHeight="25.0" fitWidth="41.0" layoutX="-27.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Foguete%20Roxo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="36.0" layoutY="252.0" prefHeight="140.0" prefWidth="625.0" style="-fx-background-color: rgba(27, 170, 227, 0.3); -fx-background-radius: 5; -fx-border-color: #ffffff; -fx-border-radius: 3;">
+         <children>
+            <ImageView fx:id="botaoPlay" fitHeight="53.0" fitWidth="53.0" layoutX="491.0" layoutY="76.0" onMouseClicked="#iniciarTrilha" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Play%20(Lua).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoReiniciar" fitHeight="53.0" fitWidth="53.0" layoutX="558.0" layoutY="76.0" onMouseClicked="#reiniciarTrilha" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Restart.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label id="labelVelocidadeVerde" layoutX="40.0" layoutY="33.0" stylesheets="@../css/telaPrincipalTrilhaEspacial.css" text="VELOCiDADE" textFill="WHITE">
+               <font>
+                  <Font name="Louize" size="18.0" />
+               </font>
+            </Label>
+            <Label id="labelVelocidadeRoxo" layoutX="40.0" layoutY="84.0" stylesheets="@../css/telaPrincipalTrilhaEspacial.css" text="VELOCiDADE" textFill="WHITE">
+               <font>
+                  <Font name="Louize" size="18.0" />
+               </font>
+            </Label>
+            <Slider id="sliderVelocidadeVerde" fx:id="sliderVelocidadeVerde" blockIncrement="1.0" layoutX="199.0" layoutY="38.0" max="5.0" min="1.0" onMouseClicked="#alterarVelocidadeFogueteVerde" onMouseDragged="#alterarVelocidadeFogueteVerde" stylesheets="@../css/telaPrincipalTrilhaEspacial.css" value="3.0" />
+            <Slider id="sliderVelocidadeRoxo" fx:id="sliderVelocidadeRoxo" blockIncrement="1.0" layoutX="199.0" layoutY="88.0" max="5.0" min="1.0" onMouseClicked="#alterarVelocidadeFogueteRoxo" onMouseDragged="#alterarVelocidadeFogueteRoxo" stylesheets="@../css/telaPrincipalTrilhaEspacial.css" value="3.0" />
+            <ImageView fitHeight="25.0" fitWidth="41.0" layoutX="157.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../assets/Foguete%20Verde.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="41.0" layoutX="157.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../assets/Foguete%20Roxo.png" />
+               </image>
+            </ImageView>
+            <Label id="labelVelocidadeVerde" fx:id="labelVelocidadeVerde" layoutX="356.0" layoutY="34.0" stylesheets="@../css/telaPrincipalTrilhaEspacial.css" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Louize" size="18.0" />
+               </font>
+            </Label>
+            <Label id="labelVelocidadeRoxo" fx:id="labelVelocidadeRoxo" layoutX="356.0" layoutY="84.0" stylesheets="@../css/telaPrincipalTrilhaEspacial.css" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Louize" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelPosicao" layoutX="57.0" layoutY="19.0" text="POSiÇÃO:" textFill="WHITE">
+         <font>
+            <Font name="Louize" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxPosicaoFogueteVerde" layoutX="158.0" layoutY="14.0" onAction="#alterarPosicaoVerde" prefHeight="33.0" prefWidth="219.0" promptText="FOGUETE VERDE" style="-fx-border-color: #ffffff; -fx-padding: 3; -fx-border-radius: 3; -fx-background-color: #0ccf1f; -fx-background-radius: 3;" />
+      <ComboBox fx:id="comboBoxPosicaoFogueteRoxo" layoutX="390.0" layoutY="14.0" onAction="#alterarPosicaoRoxo" prefHeight="33.0" prefWidth="219.0" promptText="FOGUETE ROXO" style="-fx-border-color: #ffffff; -fx-padding: 3; -fx-border-radius: 3; -fx-background-color: #a42ccd; -fx-background-radius: 3;" />
+      <Label fx:id="labelSentido" layoutX="57.0" layoutY="60.0" text="SENTiDO: " textFill="WHITE">
+         <font>
+            <Font name="Louize" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxSentidoFogueteVerde" layoutX="158.0" layoutY="55.0" onAction="#alterarSentidoFogueteVerde" prefHeight="33.0" prefWidth="219.0" promptText="FOGUETE VERDE" style="-fx-border-color: #ffffff; -fx-padding: 3; -fx-border-radius: 3; -fx-background-color: #0ccf1f; -fx-background-radius: 3;" />
+      <ComboBox fx:id="comboBoxSentidoFogueteRoxo" layoutX="390.0" layoutY="55.0" onAction="#alterarSentidoFogueteRoxo" prefHeight="33.0" prefWidth="219.0" promptText="FOGUETE ROXO" style="-fx-border-color: #ffffff; -fx-padding: 3; -fx-border-radius: 3; -fx-background-color: #a42ccd; -fx-background-radius: 3;" />
+   </children>
+</AnchorPane>

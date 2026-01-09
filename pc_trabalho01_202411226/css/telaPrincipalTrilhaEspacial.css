@@ -1,0 +1,12 @@
+.label {
+  -fx-font-family: 'Louize';
+  -fx-font-size: 18px;
+}
+
+#sliderVelocidadeVerde .track {
+  -fx-background-color: #0ccf1f;
+}
+
+#sliderVelocidadeRoxo .track {
+  -fx-background-color: #a42ccd;
+}
