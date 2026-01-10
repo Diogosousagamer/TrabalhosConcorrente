@@ -1,0 +1,43 @@
+.paineis {
+  -fx-background-color: rgba(237, 125, 44, 0.3);
+  -fx-border-radius: 3px;
+  -fx-border-color: #ffffff;
+}
+
+.labelOpcoes {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: 'Louize';
+}
+
+#titulo {
+  -fx-font-size: 20px;
+}
+
+#opcoes {
+  -fx-font-size: 15px;
+}
+
+.labelVelocidade1, .labelVelocidade2 {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: 'Louize';
+  -fx-font-size: 18px;
+}
+
+.labelTema {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: 'Louize';
+  -fx-font-size: 24px;
+}
+
+.labelDescricao {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: 'Louize';
+  -fx-font-size: 15px;
+}
+
+.labelPosicaoSentido {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: 'Louize';
+  -fx-font-size: 18px;
+}
+

@@ -1,0 +1,23 @@
+.botaoIniciar {
+  -fx-background-color: #ed4080;
+  -fx-font-family: 'Louize';
+  -fx-font-size: 24px;
+}
+
+.labelRandom {
+  -fx-text-fill: #ffffff;
+  -fx-font-family: 'Louize';
+  -fx-font-size: 15px;
+}
+
+.tituloDescricao {
+  -fx-font-family: 'Louize';
+  -fx-font-size: 24px;
+  -fx-text-fill: #ffffff;
+}
+
+.labelDescricao {
+  -fx-font-family: 'Louize';
+  -fx-font-size: 15px;
+  -fx-text-fill: #ffffff;
+}

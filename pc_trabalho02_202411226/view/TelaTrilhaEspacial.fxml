@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8.0.431" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaTrilhaEspacialController">
+   <children>
+      <ImageView fx:id="fundoTrilhaEspacial" fitHeight="406.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/NascerEspacial.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botaoVoltar" fitHeight="47.0" fitWidth="77.0" layoutX="31.0" layoutY="25.0" onMouseClicked="#voltarSelecaoFoguetes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Voltar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imagemFoguete1" fitHeight="25.0" fitWidth="41.0" layoutX="31.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Consultas/pc_trabalho01_202411226/assets/Foguete%20Verde.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagemFoguete2" fitHeight="25.0" fitWidth="41.0" layoutX="31.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Consultas/pc_trabalho01_202411226/assets/Foguete%20Roxo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botaoDescricaoTema" fitHeight="47.0" fitWidth="77.0" layoutX="609.0" layoutY="25.0" onMouseClicked="#abrirDescricao" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Mapa.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="118.0" layoutY="62.0" styleClass="labelPosicaoSentido" stylesheets="@../css/telaTrilhaEspacial.css" text="SENTiDO:" />
+      <Label layoutX="117.0" layoutY="26.0" styleClass="labelPosicaoSentido" stylesheets="@../css/telaTrilhaEspacial.css" text="POSiÇÃO:" />
+      <ComboBox fx:id="comboBoxPosicaoFoguete1" layoutX="216.0" layoutY="25.0" onAction="#alterarPosicaoFoguete1" prefHeight="25.0" prefWidth="168.0" promptText="FOGUETE 1" />
+      <ComboBox fx:id="comboBoxPosicaoFoguete2" layoutX="402.0" layoutY="25.0" onAction="#alterarPosicaoFoguete2" prefHeight="25.0" prefWidth="168.0" promptText="FOGUETE 2" />
+      <ComboBox fx:id="comboBoxSentidoFoguete1" layoutX="216.0" layoutY="61.0" onAction="#alterarPosicaoFoguete1" prefHeight="25.0" prefWidth="168.0" promptText="FOGUETE 1" />
+      <ComboBox fx:id="comboBoxSentidoFoguete2" layoutX="402.0" layoutY="61.0" onAction="#alterarPosicaoFoguete2" prefHeight="25.0" prefWidth="168.0" promptText="FOGUETE 2" />
+      <AnchorPane fx:id="painelGerenciadorFoguetes" layoutX="31.0" layoutY="252.0" prefHeight="140.0" prefWidth="625.0" styleClass="paineis" stylesheets="@../css/telaTrilhaEspacial.css">
+         <children>
+            <Label id="labelVelocidade1" layoutX="27.0" layoutY="38.0" stylesheets="@../css/telaTrilhaEspacial.css" text="VELOCiDADE" textFill="WHITE">
+               <font>
+                  <Font name="Louize" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="botaoMaisOpcoes" fitHeight="53.0" fitWidth="53.0" layoutX="558.0" layoutY="76.0" onMouseClicked="#mostrarMaisOpcoes" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Mais.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Slider fx:id="sliderVelocidadeF2" layoutX="188.0" layoutY="85.0" max="50.0" onMouseClicked="#alterarVelocidadeF2" onMouseDragged="#alterarVelocidadeF2" value="10.0" />
+            <ImageView fx:id="botaoPlay" fitHeight="53.0" fitWidth="53.0" layoutX="437.0" layoutY="73.0" onMouseClicked="#iniciarTrilha" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Play%20(Lua).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="botaoReiniciar" fitHeight="53.0" fitWidth="53.0" layoutX="498.0" layoutY="73.0" onMouseClicked="#reiniciarTrilha" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Restart.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label id="labelVelocidade2" layoutX="27.0" layoutY="80.0" stylesheets="@../css/telaTrilhaEspacial.css" text="VELOCiDADE" textFill="WHITE">
+               <font>
+                  <Font name="Louize" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="iconeFoguete1" fitHeight="25.0" fitWidth="41.0" layoutX="146.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../../../Consultas/pc_trabalho01_202411226/assets/Foguete%20Verde.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iconeFoguete2" fitHeight="25.0" fitWidth="41.0" layoutX="146.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../../../Consultas/pc_trabalho01_202411226/assets/Foguete%20Roxo.png" />
+               </image>
+            </ImageView>
+            <Slider fx:id="sliderVelocidadeF1" layoutX="188.0" layoutY="43.0" max="50.0" onMouseClicked="#alterarVelocidadeF1" onMouseDragged="#alterarVelocidadeF1" value="10.0" />
+            <Label fx:id="labelVelocidadeF1" alignment="CENTER" contentDisplay="CENTER" layoutX="345.0" layoutY="39.0" styleClass="labelVelocidade1" text="0" textAlignment="CENTER" />
+            <Label fx:id="labelVelocidadeF2" alignment="CENTER" contentDisplay="CENTER" layoutX="345.0" layoutY="80.0" styleClass="labelVelocidade2" text="0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="painelMaisOpcoes" prefHeight="406.0" prefWidth="687.0" style="-fx-background-color: rgba(0, 0, 0, 0.7);" visible="false">
+         <children>
+            <ImageView fx:id="botaoFecharMaisOpcoes" fitHeight="47.0" fitWidth="47.0" layoutX="608.0" layoutY="25.0" onMouseClicked="#fecharMaisOpcoes" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/assets/Fechar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <AnchorPane fx:id="subPainelOpcoes" layoutX="201.0" layoutY="22.0" prefHeight="362.0" prefWidth="279.0" styleClass="paineis" stylesheets="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/css/telaTrilhaEspacial.css">
+               <children>
+                  <Label id="titulo" layoutX="102.0" layoutY="24.0" prefHeight="31.0" prefWidth="75.0" styleClass="labelOpcoes" stylesheets="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/css/telaTrilhaEspacial.css" text="MÚSiCA" textAlignment="CENTER" />
+                  <Label id="opcoes" layoutX="14.0" layoutY="64.0" styleClass="labelOpcoes" stylesheets="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/css/telaTrilhaEspacial.css" text="NOME:" />
+                  <Label id="opcoes" layoutX="14.0" layoutY="111.0" styleClass="labelOpcoes" stylesheets="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/css/telaTrilhaEspacial.css" text="VOLUME:" />
+                  <ComboBox fx:id="comboBoxMusicas" layoutX="91.0" layoutY="61.0" onAction="#alterarMusica" prefHeight="25.0" prefWidth="178.0" promptText="MÚSiCA" />
+                  <Slider fx:id="sliderVolume" layoutX="91.0" layoutY="114.0" onMouseClicked="#alterarVolume" onMouseDragged="#alterarVolume" prefHeight="14.0" prefWidth="178.0" value="50.0" />
+                  <Label fx:id="labelMusica" layoutX="12.0" layoutY="154.0" styleClass="labelOpcoes" stylesheets="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/css/telaTrilhaEspacial.css" text="PAUSAR MÚSiCA:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="botaoGerenciarMusica" fitHeight="40.0" fitWidth="41.0" layoutX="146.0" layoutY="144.0" onMouseClicked="#desativarMusica" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/assets/Mutar.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label id="titulo" layoutX="109.0" layoutY="187.0" prefHeight="31.0" prefWidth="57.0" styleClass="labelOpcoes" stylesheets="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/css/telaTrilhaEspacial.css" text="TEMA" textAlignment="CENTER" />
+                  <ComboBox fx:id="comboBoxTemas" layoutX="10.0" layoutY="224.0" onAction="#alterarTema" prefHeight="25.0" prefWidth="258.0" promptText="TEMA" />
+                  <Label id="titulo" layoutX="21.0" layoutY="261.0" prefHeight="31.0" prefWidth="237.0" styleClass="labelOpcoes" stylesheets="@../../../Consultas/pc_trabalho02_202411226/pc_trabalho02_202411226/css/telaTrilhaEspacial.css" text="COLiSÃO DOS FOGUETES" textAlignment="CENTER" />
+                  <ComboBox fx:id="comboBoxColisaoFoguetes" layoutX="9.0" layoutY="304.0" onAction="#alterarOpcaoColisao" prefHeight="25.0" prefWidth="258.0" promptText="COLiSÃO" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="painelDescricaoTema" prefHeight="406.0" prefWidth="687.0" style="-fx-background-color: rgba(0, 0, 0, 0.7);" visible="false">
+         <children>
+            <AnchorPane fx:id="subPainelDescricaoTema" layoutX="180.0" layoutY="33.0" prefHeight="341.0" prefWidth="327.0" styleClass="paineis" stylesheets="@../css/telaTrilhaEspacial.css" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0">
+               <children>
+                  <Label fx:id="labelTema" alignment="CENTER" layoutX="144.0" layoutY="34.0" styleClass="labelTema" text="TiTULO" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Label fx:id="labelDescricao" layoutX="14.0" layoutY="73.0" styleClass="labelDescricao" stylesheets="@../css/telaTrilhaEspacial.css" text="Label" textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="botaoFecharDescricao" fitHeight="53.0" fitWidth="65.0" layoutX="607.0" layoutY="20.0" onMouseClicked="#fecharDescricao" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Fechar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

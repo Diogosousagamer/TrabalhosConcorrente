@@ -1,0 +1,12 @@
+.labelVelocidade {
+  -fx-font-family: 'Press Start 2P';
+  -fx-font-size: 15px;
+}
+
+.sliderCliente .track {
+  -fx-background-color: #308a61;
+}
+
+.sliderBob {
+  -fx-background-color: #b38340;
+}

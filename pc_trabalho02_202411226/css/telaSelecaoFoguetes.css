@@ -1,0 +1,39 @@
+.labelSelecionar {
+  -fx-font-size: 20px;
+  -fx-font-family: 'Louize';
+  -fx-text-fill: #ffffff;
+}
+
+.botaoIniciarTrilha {
+  -fx-font-size: 24px;
+  -fx-font-family: 'Louize';
+  -fx-text-fill: #ffffff;
+}
+
+.labelFoguetes {
+  -fx-font-size: 18px;
+  -fx-font-family: 'Louize';
+  -fx-text-fill: #ffffff;
+}
+
+.labelItems {
+  -fx-font-size: 18px;
+  -fx-font-family: 'Louize';
+  -fx-text-fill: #ffffff;
+}
+
+.comboBoxes {
+  -fx-text-fill: #ffffff;
+}
+
+.labelVelocidade1 {
+  -fx-font-size: 18px;
+  -fx-font-family: 'Louize';
+  -fx-text-fill: #ffffff;
+}
+
+.labelVelocidade2 {
+  -fx-font-size: 18px;
+  -fx-font-family: 'Louize';
+  -fx-text-fill: #ffffff;
+}
